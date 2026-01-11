@@ -4,6 +4,7 @@ date: 2023-11-21 22:50 +0200
 categories: [LLMs, GenAI, VectorDBs, Embeddings]
 tags: [llms, genai, vectordbs, embeddings]
 author: tremo
+description: "Exploring alternatives to vector databases for LLM applications, including FAISS, PostgreSQL pgvector, and Elasticsearch."
 ---
 
 ## Do You Really Need a VectorDB?
@@ -37,4 +38,6 @@ Vector Databases definitely have their specialized use cases, especially for use
 - [Beware Tunnel Vision in AI Retrieval - by Colin Harman](https://colinharman.substack.com/p/beware-tunnel-vision-in-ai-retrieval)
 - [Do you actually need a vector database? - Ethan Rosenthal](https://www.ethanrosenthal.com/2023/04/10/nn-vs-ann/)
 
-\#vectordbs \#llms \#genai \#ir
+---
+
+**Related:** For more on LLM infrastructure, check out my posts on [How to Efficiently Serve an LLM?](/posts/How-to-Efficiently-serve-an-llm/) and [What Infrastructure does it take to train a 405B model?](/posts/What-Infra-does-it-take-to-train-llama405b/)

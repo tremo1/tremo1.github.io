@@ -4,6 +4,7 @@ date: 2023-06-01 20:14 +0300
 categories: [Blogging, Tutorial]
 tags: [github-pages, blog, personal blog, jekyll]
 author: tremo
+description: "Step-by-step guide to setting up a personal blog using Jekyll and GitHub Pages with custom domain configuration."
 ---
 
 ## My first ever blog post

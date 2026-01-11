@@ -4,6 +4,7 @@ date: 2023-12-04 21:30 +0200
 categories: [TikTok, Recommendation Systems, Kafka, Flink]
 tags: [tiktok, recommendation systems, kafka, flink]
 author: tremo
+description: "Deep dive into ByteDance's Monolith framework powering TikTok's real-time recommendation system with online training."
 ---
 ## Intro
 
@@ -28,7 +29,7 @@ These elements are merged to create detailed user profiles and content embedding
 
 Embeddings are input to a Deep Factorization Machine, which leverages a deep neural network to capture non-linear and complex patterns from the embeddings, and Factorization Machines to capture linear correlations between different features, which is essential in understanding simple yet effective user-item interactions.
 
-![Model Architecture](/assets/img/posts/2023-12-04-the-tech-behind-tiktoks-addicitve-recommendation-system/model_architecture.png)
+![Model Architecture](/assets/img/posts/2023-12-04-the-tech-behind-tiktoks-addictive-recommendation-system/model_architecture.png)
 _Model Architecture_
 
 ## Real-Time Online Training
@@ -39,12 +40,12 @@ TikTok has to update its recommendation system as fast as possible to account fo
 
 During online training, sparse parameters are updated on a minute-level interval from the training PS (Parameter Synchronization) to the serving PS, which avoids heavy network transmissions or memory spikes.
 
-![Training Pipeline](/assets/img/posts/2023-12-04-the-tech-behind-tiktoks-addicitve-recommendation-system/training_pipeline.png)
+![Training Pipeline](/assets/img/posts/2023-12-04-the-tech-behind-tiktoks-addictive-recommendation-system/training_pipeline.png)
 _Training Pipeline_
 
 Monolith uses TensorFlow’s distributed Worker-ParameterServer, where multiple machines work together to train a model. Workers are responsible for performing computations (gradients/parameter updates), while parameter servers are used for storing the current model state like weights and biases.
 
-![TensorFlow Distributed System](/assets/img/posts/2023-12-04-the-tech-behind-tiktoks-addicitve-recommendation-system/worker-ps-architecture.png)
+![TensorFlow Distributed System](/assets/img/posts/2023-12-04-the-tech-behind-tiktoks-addictive-recommendation-system/worker-ps-architecture.png)
 
 ## Managing Large and Dynamic User Data: Embedding Collisions
 
@@ -54,7 +55,7 @@ To tackle this, "Monolith" employs "cuckoo hashing." This method uses two hash t
 
 Additionally, to prevent the embedding memory from expanding too rapidly, a probabilistic filter and an adjustable expiration period for embeddings are used, effectively managing the memory requirements.
 
-![Cuckoo Hashing](/assets/img/posts/2023-12-04-the-tech-behind-tiktoks-addicitve-recommendation-system//cuckoo_hashmap.png)
+![Cuckoo Hashing](/assets/img/posts/2023-12-04-the-tech-behind-tiktoks-addictive-recommendation-system//cuckoo_hashmap.png)
 
 ## Conclusion
 
