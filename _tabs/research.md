@@ -22,6 +22,14 @@ I contributed to Muse Spark's computer-use capabilities and coding diversity acr
 
 [Public contribution post](https://www.linkedin.com/feed/update/urn:li:activity:7481060696319991809/)
 
+## Open source
+
+### Spegel
+
+Contributed technical architecture and flow diagrams to Spegel, a cluster-local OCI registry mirror for Kubernetes.
+
+[Merged documentation contribution](https://github.com/spegel-org/spegel/pull/621) · [Project](https://github.com/spegel-org/spegel)
+
 ## Earlier technical work
 
 At Dell Technologies, I worked on a demand-forecasting machine learning solution and co-authored a whitepaper describing its features, challenges, and benefits.
