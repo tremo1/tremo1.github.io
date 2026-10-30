@@ -20,11 +20,12 @@ timezone: Africa/Cairo
 
 title: Tremo Ahmed # the main title
 
-tagline: Research Engineer @ Meta | AI Infra
+tagline: Research Engineer @ FAIR, Meta | AI Agents & ML Systems
 
 description: >-
-  Technical blog by Tremo Ahmed, Research Engineer at Meta,
-  covering AI infra, LLM serving, and distributed systems.
+  Tremo Ahmed is a Research Engineer at FAIR, Meta Superintelligence Labs,
+  working on AI agents, computer use, and ML systems. Research and technical
+  writing on LLM inference, AI infrastructure, and distributed systems.
   
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://tremo.uk"
@@ -47,6 +48,8 @@ social:
     # Uncomment below to add more social links
     - https://www.facebook.com/ahmed.tremo
     - https://www.linkedin.com/in/tremo1
+    - https://scholar.google.com/citations?user=SQXmRkQAAAAJ&hl=en
+    - https://huggingface.co/ahmedtremo
 
 google_site_verification: # fill in to your verification string
 

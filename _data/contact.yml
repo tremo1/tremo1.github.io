@@ -4,6 +4,10 @@
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.linkedin.com/in/tremo1' # Fill with your Linkedin homepage
 
+- type: scholar
+  icon: 'fas fa-graduation-cap'
+  url: 'https://scholar.google.com/citations?user=SQXmRkQAAAAJ&hl=en'
+
 - type: github
   icon: "fab fa-github"
 
