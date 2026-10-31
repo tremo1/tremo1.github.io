@@ -8,7 +8,7 @@ I'm Tremo Ahmed, a Research Engineer at [FAIR, Meta Superintelligence Labs](http
 
 I contributed to [Muse Spark's computer-use capabilities and coding diversity across agent harnesses](https://www.linkedin.com/feed/update/urn:li:activity:7481060696319991809/), and I'm a co-author of [Muse Glimmer 30B: An On-Device Agentic Model](https://arxiv.org/abs/2610.24628).
 
-Previously, I worked as an Applied Scientist at [Microsoft](https://www.microsoft.com/), a machine learning engineer at [Dell Technologies](https://www.dell.com/), and a data engineer at [Lumin Systems](http://excelsystems-eg.com/). I write about LLM inference and AI infrastructure here.
+Previously, I worked as an Applied Scientist at [Microsoft](https://www.microsoft.com/), a machine learning engineer at [Dell Technologies](https://www.dell.com/), and a data engineer at [Lumin Systems](http://excelsystems-eg.com/) (formerly Excel Systems). I write about LLM inference and AI infrastructure here.
 
 See my [selected research](/research/) and [Google Scholar profile](https://scholar.google.com/citations?user=SQXmRkQAAAAJ&hl=en).
 
