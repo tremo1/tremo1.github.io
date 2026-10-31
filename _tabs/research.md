@@ -6,7 +6,7 @@ order: 4
 
 I work on AI agents, computer use, and ML systems as a Research Engineer at FAIR, Meta Superintelligence Labs.
 
-[ORCID: 0009-0000-1023-8053](https://orcid.org/0009-0000-1023-8053) · [Google Scholar](https://scholar.google.com/citations?user=SQXmRkQAAAAJ&hl=en)
+[ORCID: 0009-0000-1023-8053](https://orcid.org/0009-0000-1023-8053) · [Google Scholar](https://scholar.google.com/citations?user=SQXmRkQAAAAJ&hl=en) · [arXiv author page](https://arxiv.org/a/ahmed_t_5)
 
 ## Selected research
 
