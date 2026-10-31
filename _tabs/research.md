@@ -6,6 +6,8 @@ order: 4
 
 I work on AI agents, computer use, and ML systems as a Research Engineer at FAIR, Meta Superintelligence Labs.
 
+[ORCID: 0009-0000-1023-8053](https://orcid.org/0009-0000-1023-8053) · [Google Scholar](https://scholar.google.com/citations?user=SQXmRkQAAAAJ&hl=en)
+
 ## Selected research
 
 ### Muse Glimmer 30B: An On-Device Agentic Model

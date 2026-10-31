@@ -8,6 +8,10 @@
   icon: 'fas fa-graduation-cap'
   url: 'https://scholar.google.com/citations?user=SQXmRkQAAAAJ&hl=en'
 
+- type: orcid
+  icon: 'fab fa-orcid'
+  url: 'https://orcid.org/0009-0000-1023-8053'
+
 - type: github
   icon: "fab fa-github"
 
