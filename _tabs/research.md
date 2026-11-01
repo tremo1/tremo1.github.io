@@ -1,7 +1,8 @@
 ---
 title: Research
 icon: fas fa-flask
-order: 4
+order: 1
+description: Selected research, publications, and open-source contributions by Tremo Ahmed, Research Engineer at Meta Superintelligence Labs.
 ---
 
 I work on AI agents, computer use, and ML systems as a Research Engineer at FAIR, Meta Superintelligence Labs.

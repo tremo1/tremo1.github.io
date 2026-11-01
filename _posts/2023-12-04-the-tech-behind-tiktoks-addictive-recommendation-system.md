@@ -4,11 +4,14 @@ date: 2023-12-04 21:30 +0200
 categories: [TikTok, Recommendation Systems, Kafka, Flink]
 tags: [tiktok, recommendation systems, kafka, flink]
 author: tremo
-description: "Deep dive into ByteDance's Monolith framework powering TikTok's real-time recommendation system with online training."
+description: "A look at ByteDance's published Monolith recommendation architecture: online training, streaming features, and collisionless embedding tables."
 ---
 ## Intro
 
-I’ve been using TikTok a lot lately and was curious about the tech behind TikTok’s addictive algorithm, the "Recommendation System." I visited their official [blog post](https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you) but found limited details on how it works. So, I googled and found two papers “[Monolith](https://arxiv.org/pdf/2209.07663.pdf)” and “[IPS](https://www.cs.princeton.edu/courses/archive/spring21/cos598D/icde_2021_camera_ready.pdf),” released by ByteDance, TikTok’s parent company, and here is the process as explained by them.
+I’ve been using TikTok a lot lately and was curious about the tech behind TikTok’s addictive algorithm, the "Recommendation System." I visited their official [blog post](https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you) but found limited details on how it works. So, I looked into two papers from ByteDance, TikTok's parent company: “[Monolith](https://arxiv.org/pdf/2209.07663.pdf)” and “[IPS](https://www.cs.princeton.edu/courses/archive/spring21/cos598D/icde_2021_camera_ready.pdf).”
+
+> **Scope:** The architecture discussion below follows ByteDance's published research. It illustrates how large recommendation systems can work; it is not a verified description of TikTok's complete production stack. These are notes from December 2023.
+{: .prompt-info }
 
 ## Recommendation features
 
@@ -34,7 +37,7 @@ _Model Architecture_
 
 ## Real-Time Online Training
 
-TikTok has to update its recommendation system as fast as possible to account for the non-stationary nature of user data, known as “Concept Drift.” So, there has to be a mechanism that updates the model parameters in real-time.
+Recommendation systems need to adapt as user interests and content change, a problem known as “concept drift.” Online training is one way to update the model as fresh interactions arrive.
 
 “Monolith” framework uses a streaming engine that can be used in both batch and online training in a unified design. They use a Kafka queue to log actions of users (clicks, likes, comments, etc.) and another Kafka queue for features. And Flink as a streaming engine/job for joining them to create training examples.
 
@@ -59,7 +62,7 @@ Additionally, to prevent the embedding memory from expanding too rapidly, a prob
 
 ## Conclusion
 
-TikTok’s recommendation system played a main role in its success and widespread use. I tried in this blog post to shed some light on the underlying technologies used, especially the online training, which helps them recommend real-time personalized content that keeps users staring at their phones for hours.
+TikTok made me curious about the systems behind personalized recommendations. ByteDance's published research gives a useful view into the engineering challenges: fresh training data, fast parameter updates, and large embedding tables. Those ideas help explain how recommendation systems can adapt to users in real time.
 
 **References:**
 

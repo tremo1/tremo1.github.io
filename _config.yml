@@ -20,7 +20,7 @@ timezone: Africa/Cairo
 
 title: Tremo Ahmed # the main title
 
-tagline: Research Engineer @ FAIR, Meta | AI Agents & ML Systems
+tagline: Research Engineer @ Meta Superintelligence Labs
 
 description: >-
   Tremo Ahmed is a Research Engineer at FAIR, Meta Superintelligence Labs,
@@ -43,6 +43,7 @@ social:
   email: me@tremo.uk # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://tremo.uk/
     - https://twitter.com/tremooo # change to your twitter homepage
     - https://github.com/tremo1 # change to your github homepage
     # Uncomment below to add more social links

@@ -1,0 +1,11 @@
+- path: _posts/2024-08-05-How-to-Efficiently-serve-an-llm.md
+  topic: LLM inference
+  summary: Batching, KV cache, quantization, and the trade-offs in serving a model.
+
+- path: _posts/2024-07-27-What-Infra-does-it-take-to-train-llama405b?.md
+  topic: Training infrastructure
+  summary: Networks, storage, compute, and recovery at the scale of Llama 3.1 405B.
+
+- path: _posts/2024-11-04-Spegel-stateless-local-OCI-mirror.md
+  topic: Distributed systems
+  summary: A visual guide to sharing container images across a Kubernetes cluster.

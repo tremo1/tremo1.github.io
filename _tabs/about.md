@@ -1,7 +1,9 @@
 ---
 # the default layout is 'page'
+title: About
 icon: fas fa-info-circle
-order: 5
+order: 2
+description: About Tremo Ahmed, a Research Engineer at Meta Superintelligence Labs in London working on AI agents, computer use, and ML systems.
 ---
 
 I'm Tremo Ahmed, a Research Engineer at [FAIR, Meta Superintelligence Labs](https://www.meta.com/) in London. I work on AI agents, computer use, and the systems that support model training and evaluation.
@@ -12,17 +14,22 @@ Previously, I worked as an Applied Scientist at [Microsoft](https://www.microsof
 
 See my [selected research](/research/) and [Google Scholar profile](https://scholar.google.com/citations?user=SQXmRkQAAAAJ&hl=en).
 
-I graduated from The [German university in Cairo](https://www.guc.edu.eg/), with a bachelor's degree in computer engineering with an Excellent with honors grade.
+## Background
 
-I've published a [whitepaper](https://infohub.delltechnologies.com/t/demand-forecasting-a-machine-learning-based-solution-to-forecast-demand-signals-for-dell-services/) describing the features, challenges, and benefits of the demand forecasting machine 
-learning-based solution I worked on at [Dell Technologies](https://www.dell.com/). I've also won the 1st place in [Dell Technologies Annual AI Hackathon](https://hacktrick.io/)
+I graduated from the [German University in Cairo](https://www.guc.edu.eg/) with a bachelor's degree in computer engineering, graded Excellent with Honors.
 
-In my free time, I play football & go to the gym. Fun fact, My [bachelor thesis](https://github.com/tremo1/FootballTactics) was about identifying football tactics using machine learning.
+At Dell Technologies, I co-authored a [whitepaper](https://infohub.delltechnologies.com/t/demand-forecasting-a-machine-learning-based-solution-to-forecast-demand-signals-for-dell-services/) on the demand-forecasting machine learning solution I worked on. I also won first place in the [Dell Technologies Annual AI Hackathon](https://hacktrick.io/).
 
-Summer 2019, I spent 3 months in the US as a part of culture exchange program called [Work and Travel](https://en.wikipedia.org/wiki/Work_and_Travel_USA) where I worked at [Six Flags](https://www.sixflags.com/greatescape) as a ride operator. (was really fun)!
+## Outside work
+
+In my free time, I play football and go to the gym. Fun fact: my [bachelor's thesis](https://github.com/tremo1/FootballTactics) was about identifying football tactics using machine learning.
+
+In summer 2019, I spent three months in the US as part of the [Work and Travel](https://en.wikipedia.org/wiki/Work_and_Travel_USA) cultural exchange program. I worked at [Six Flags](https://www.sixflags.com/greatescape) as a ride operator. It was really fun!
 
 ![tremo-mountain](/assets/img/personal/tremo-mountain.jpg){: w="700" h="400" }
 _Me at the top of [Mount Moses](https://en.wikipedia.org/wiki/Mount_Sinai), Sinai, Egypt_
 
 
-I'm best reached through [LinkedIn](https://www.linkedin.com/in/tremo1/). I'm always open to interesting conversations and collaboration.
+## Get in touch
+
+I'm best reached through [LinkedIn](https://www.linkedin.com/in/tremo1/). I'm always open to interesting conversations and collaboration. You can also [subscribe to new posts via RSS](/feed.xml).

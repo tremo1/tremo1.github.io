@@ -2,7 +2,8 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 7.0"
+# Keep local previews and GitHub Pages on the same reviewed theme version.
+gem "jekyll-theme-chirpy", "7.6.0"
 
 # Required for Ruby 4.0+ compatibility
 gem "logger"

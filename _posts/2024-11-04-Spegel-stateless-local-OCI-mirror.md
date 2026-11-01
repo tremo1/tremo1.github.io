@@ -1,5 +1,5 @@
 ---
-title: Spegel - Stateless Local OCI Mirror
+title: Spegel Explained — A Visual Architecture Guide
 date: 2024-11-04
 categories: [OCI, Mirror, Spegel]
 tags: [OCI, Mirror, Spegel]
@@ -8,6 +8,8 @@ description: "Visual architecture guide to Spegel, a stateless cluster-local OCI
 ---
 
 [Spegel](https://github.com/spegel-org/spegel) describes itself as a stateless, cluster-local OCI registry mirror. In this post, we’ll decipher what that means and explore why Spegel might be valuable for your Kubernetes (K8s) setup.
+
+I contributed these architecture and flow diagrams to the project’s documentation. You can see the [merged contribution](https://github.com/spegel-org/spegel/pull/621) and the [current Spegel documentation](https://spegel.dev/).
 
 ## What is Spegel?
 
@@ -43,53 +45,62 @@ Let’s dive into Spegel’s architecture through a series of diagrams:
 
 This diagram shows how Spegel pods form a P2P network within the cluster. Each Spegel pod interacts with containerd and, if necessary, falls back to the external registry.
 
-![Cluster Architecture](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/cluster_architecture.png)__Cluster Architecture__
+![Cluster Architecture](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/cluster_architecture.png)
+_Cluster Architecture_
 
 ### 2. Pod Component Architecture
 
 Displays the components within a Spegel pod, including registry services, P2P components, and state management.
 
-![Pod Component Architecture](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/pod_component_architecture.png)__Pod Component Architecture__
+![Pod Component Architecture](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/pod_component_architecture.png)
+_Pod Component Architecture_
 
 ### 3. Image Pull Flow
 
 This sequence shows how an image pull request is handled, covering both peer pulls and fallback to external registry.
 
-![Image Pull Flow](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/image_pull_flow.png)__Image Pull Flow__
+![Image Pull Flow](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/image_pull_flow.png)
+_Image Pull Flow_
 
 ### 4. P2P Network Formation
 
 Illustrates how nodes discover each other and form the P2P network through leader election and peer sharing.
 
-![P2P Network Formation](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/p2p_network_formation.png)__P2P Network Formation__
+![P2P Network Formation](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/p2p_network_formation.png)
+_P2P Network Formation_
 
 ### 5. State Management and Content Advertisement
 
 Depicts how content availability is maintained and advertised across the P2P network.
 
-![State Management and Content Advertisement](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/state_management_and_content_advertisement.png)__State Management and Content Advertisement__
+![State Management and Content Advertisement](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/state_management_and_content_advertisement.png)
+_State Management and Content Advertisement_
 
 ### 6. Content Resolution Process
 
-![Content Resolution Process](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/content_resolution_process.png)__Content Resolution Process__
+![Content Resolution Process](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/content_resolution_process.png)
+_Content Resolution Process_
 
 ### 7. Data Flow Paths
 
 Describes content and control flow within the system, including peer transfers and fallback.
 
-![Data Flow Paths](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/data_flow_paths.png)__Data Flow Paths__
+![Data Flow Paths](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/data_flow_paths.png)
+_Data Flow Paths_
 
 ### 8. Failure Handling
 
 Demonstrates failure handling scenarios within the system.
 
-![Failure Handling](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/failure_handling.png)__Failure Handling__
+![Failure Handling](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/failure_handling.png)
+_Failure Handling_
 
 ### 9. Metrics Collection
 
 Shows how metrics are collected and organized across the system components.
 
-![Metrics Collection](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/metrics_collection.png)__Metrics Collection__
+![Metrics Collection](/assets/img/posts/2024-11-04-Spegel-stateless-local-OCI-mirror/metrics_collection.png)
+_Metrics Collection_
 
 ## Conclusion
 

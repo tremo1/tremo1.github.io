@@ -1,0 +1,114 @@
+---
+---
+
+/* Small additions to Chirpy; the theme still owns article and navigation styles. */
+.content a.popup + em { color: var(--text-muted-color); }
+
+.home-intro {
+  padding: 1.5rem 0 2rem;
+
+  .home-eyebrow {
+    color: var(--link-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    margin-bottom: 0.85rem;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    color: var(--heading-color);
+    font-size: clamp(2rem, 3.4vw, 2.85rem);
+    letter-spacing: -0.035em;
+    line-height: 1.15;
+    margin: 0 0 1.15rem;
+    max-width: 18ch;
+  }
+
+  .home-description {
+    color: var(--text-color);
+    font-size: 1.06rem;
+    line-height: 1.8;
+    max-width: 62ch;
+  }
+}
+
+.home-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.4rem;
+  margin-top: 1.3rem;
+
+  a {
+    color: var(--link-color);
+    display: inline-flex;
+    gap: 0.6rem;
+    align-items: center;
+    min-height: 44px;
+    text-decoration: none;
+  }
+
+  .home-primary-link {
+    border: 1px solid var(--btn-border-color);
+    border-radius: 0.6rem;
+    padding: 0.55rem 0.85rem;
+  }
+}
+
+.reading-list {
+  border-top: 1px solid var(--main-border-color);
+  padding-top: 1.75rem;
+
+  h2 { font-size: 1.35rem; margin: 0 0 0.4rem; }
+  .reading-intro { color: var(--text-muted-color); margin-bottom: 0.65rem; }
+  ol { list-style: none; margin: 0; padding: 0; }
+
+  li + li { border-top: 1px solid var(--main-border-color); }
+
+  li > a {
+    align-items: center;
+    border-radius: 0.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1.6rem minmax(0, 1fr) 1rem;
+    padding: 1.05rem 0.4rem;
+    text-decoration: none;
+  }
+
+  li > a:hover { background: var(--card-bg); }
+  .reading-number { align-self: start; color: var(--text-muted-color); padding-top: 0.1rem; font-size: 0.8rem; }
+  .reading-topic { color: var(--link-color); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; }
+  h3 { color: var(--heading-color); font-size: 1.08rem; line-height: 1.45; margin: 0.15rem 0 0.3rem; }
+  .reading-summary { color: var(--text-muted-color); display: block; font-size: 0.9rem; line-height: 1.6; }
+  .reading-arrow { color: var(--link-color); }
+}
+
+#writing { scroll-margin-top: 5rem; }
+.writing-header {
+  align-items: baseline;
+  border-top: 1px solid var(--main-border-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+
+  h2 { font-size: 1.35rem; margin: 0; }
+  .rss-link { color: var(--link-color); font-size: 0.85rem; padding: 0.5rem 0; }
+}
+
+#writing #post-list { margin-top: 1rem; }
+.home-links a:focus-visible,
+.reading-list li > a:focus-visible,
+.rss-link:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 4px;
+}
+
+@media (max-width: 575px) {
+  .home-intro { padding-top: 1rem; }
+  .home-intro .home-description { font-size: 1rem; line-height: 1.75; }
+  .reading-list li > a { gap: 0.65rem; grid-template-columns: 1.25rem minmax(0, 1fr) 0.9rem; padding: 1rem 0; }
+}

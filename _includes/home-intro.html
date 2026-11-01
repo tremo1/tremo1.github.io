@@ -1,0 +1,32 @@
+<section class="home-intro" aria-labelledby="home-heading">
+  <p class="home-eyebrow">Notes from research engineering</p>
+  <h1 id="home-heading">AI agents, inference &amp; ML systems</h1>
+  <p class="home-description">I'm Tremo. I work on AI agents and computer use at Meta Superintelligence Labs. Here, I write about how ML systems work, from serving LLMs to the infrastructure behind large-scale training.</p>
+  <div class="home-links">
+    <a class="home-primary-link" href="{{ '/research/' | relative_url }}">Research &amp; publications <span aria-hidden="true">↗</span></a>
+    <a href="{{ '/about/' | relative_url }}">More about me <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<section class="reading-list" aria-labelledby="reading-heading">
+  <h2 id="reading-heading">Start here</h2>
+  <p class="reading-intro">Three guides to the systems behind the models.</p>
+  <ol>
+    {% for item in site.data.reading_list %}
+      {% assign selected = site.posts | where: 'path', item.path | first %}
+      {% if selected %}
+        <li>
+          <a href="{{ selected.url | relative_url }}">
+            <span class="reading-number" aria-hidden="true">0{{ forloop.index }}</span>
+            <span class="reading-copy">
+              <span class="reading-topic">{{ item.topic }}</span>
+              <h3>{{ selected.title }}</h3>
+              <span class="reading-summary">{{ item.summary }}</span>
+            </span>
+            <span class="reading-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</section>

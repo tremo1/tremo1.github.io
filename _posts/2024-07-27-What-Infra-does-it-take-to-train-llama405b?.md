@@ -1,11 +1,14 @@
 ---
-title: What Infrastructure does it take to train a 405B Llama3-like model?
+title: What Infrastructure Does It Take to Train a 405B Model?
 date: 2024-07-28
 categories: [LLM, Infrastructure, GPU, Distributed Training]
 tags: [LLM, infrastructure, GPU, distributed training]
 author: tremo
-description: "A comprehensive overview of the infrastructure required to train 405B parameter LLMs, covering network topology, storage, compute, and fault tolerance."
+description: "A look at the networks, storage, compute, and fault tolerance behind large-scale training, using Llama 3.1 405B as the reference."
 ---
+
+> **Context:** These notes reflect public reports available in July 2024, around the release of Llama 3.1 405B. Hardware comparisons, costs, and statements about the latest clusters should be read in that context.
+{: .prompt-info }
 
 ## Intro
 
@@ -14,7 +17,7 @@ Setting up the infrastructure for training the latest frontier models is not an 
 Understanding the underlying infrastructure used to train the latest LLMs is essential for ML scientists to maximize the MFU (Model FLOPs Utilization), especially as infrastructure costs rise. AI labs are currently racing to build the first 100K H100 cluster that would cost an estimated [$4 billion](https://www.semianalysis.com/p/100000-h100-clusters-power-network). With that in mind, here’s an overview of the components required for building the infrastructure for the latest & greatest LLMs.
 
 ![Meta's 24k Cluster](/assets/img/posts/2024-07-27-What-Infra-does-it-take-to-train-llama405b/Infra%20Networking%20cluster.jpg)
-__Meta’s 24k H100 cluster design with a 7:1 oversubscription ratio__
+_Meta’s 24k H100 cluster design with a 7:1 oversubscription ratio_
 
 ## Network Topology
 
@@ -84,7 +87,7 @@ Ensuring fault tolerance and performing regular health checks are crucial for ma
 To illustrate the common issues faced during large-scale training runs, here are the interruption categories Meta encountered during their 54-day training run for Llama3:
 
 ![Meta Interruptions](/assets/img/posts/2024-07-27-What-Infra-does-it-take-to-train-llama405b/Meta%20interruptions.png)
-__Meta’s interruptions during 54-day training run__
+_Meta’s interruptions during 54-day training run_
 
 ## Conclusion
 

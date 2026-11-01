@@ -34,6 +34,17 @@ $ bundle
 
 Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
 
+## Site customizations
+
+The live site is [tremo.uk](https://tremo.uk/). Use Ruby 3.3, as in the Pages workflow, and run `bundle install` followed by `bundle exec jekyll serve` to preview it locally.
+
+- `_includes/home-intro.html` contains the homepage introduction; `_data/reading_list.yml` selects the three starting articles by source path.
+- `assets/css/blog.scss` adds responsive homepage styles and caption contrast through `_includes/metadata-hook.html`.
+- `_layouts/home.html` and `_includes/head.html` are based on Chirpy 7.6.0. They add the homepage sections, semantic headings, custom-tab title fallback, and support for browser zoom. Review these overrides when upgrading the pinned theme.
+- Keep post filenames and existing permalinks stable. Historical articles include date context where prices, hardware, or setup instructions may have changed.
+
+Before publishing, build with `JEKYLL_ENV=production bundle exec jekyll build` and run the internal-link checks from `.github/workflows/pages-deploy.yml`.
+
 ## License
 
 This work is published under [MIT][mit] License.

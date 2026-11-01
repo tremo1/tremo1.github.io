@@ -1,5 +1,5 @@
 ---
-title: Starting A Blog Hosted On Github Pages
+title: Starting a Blog on GitHub Pages
 date: 2023-06-01 20:14 +0300
 categories: [Blogging, Tutorial]
 tags: [github-pages, blog, personal blog, jekyll]
@@ -9,7 +9,10 @@ description: "Step-by-step guide to setting up a personal blog using Jekyll and 
 
 ## My first ever blog post
 
-I've been thinking about starting a blog for a while now and I was procrastinating quite a bit :D. But, I finally did it and here I am writing my first ever blog post. Suprisingly enough, it will be about my experience setting up my blog and how you can do it too :D.
+I've been thinking about starting a blog for a while now and I was procrastinating quite a bit :D. But, I finally did it and here I am writing my first ever blog post. Surprisingly enough, it will be about my experience setting up my blog and how you can do it too :D.
+
+> **A note on this walkthrough:** I set this up in June 2023. Screenshots, registrar options, and theme setup steps may have changed. My current site is [tremo.uk](https://tremo.uk/); the older domain in the examples is part of the original walkthrough. For today's setup, use the [current Chirpy guide](https://chirpy.cotes.page/posts/getting-started/) and [GitHub's custom-domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+{: .prompt-info }
 
 ![Desktop View](/assets/img/posts/2023-06-01-starting-a-blog-on-gh-pages/Intro_meme.jpg){: width="500"}
 _Scenario of a developer starting a blog_
